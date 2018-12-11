@@ -132,6 +132,7 @@
             // 
             this.гистограммаЯркостиToolStripMenuItem.Name = "гистограммаЯркостиToolStripMenuItem";
             resources.ApplyResources(this.гистограммаЯркостиToolStripMenuItem, "гистограммаЯркостиToolStripMenuItem");
+            this.гистограммаЯркостиToolStripMenuItem.Click += new System.EventHandler(this.гистограммаЯркостиToolStripMenuItem_Click);
             // 
             // разрезЯркостиToolStripMenuItem
             // 
@@ -184,7 +185,7 @@
 
         #endregion
 
-        public System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

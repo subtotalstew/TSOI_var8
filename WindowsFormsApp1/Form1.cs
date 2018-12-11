@@ -9,12 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
+    
     public partial class MainForm : Form
     {
         public MainForm()
-        {
+        { 
             InitializeComponent();
             label3.Text = "Gamma =" + hScrollBar1.Value.ToString();
             hScrollBar1.Visible = false;
@@ -81,11 +83,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void гистограммыToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (Form2 f2 = new Form2())
@@ -114,6 +111,14 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void гистограммаЯркостиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (Form3 f3 = new Form3(this.pictureBox1.Image))
+            {
+                f3.ShowDialog(this);
+            }
         }
     }
 }
