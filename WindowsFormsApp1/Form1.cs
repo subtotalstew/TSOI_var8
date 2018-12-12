@@ -41,11 +41,17 @@ namespace WindowsFormsApp1
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
-            pictureBox2.Image = AdjustGamma(pictureBox1.Image, hScrollBar1.Value);
-            hScrollBar1.Visible = true;
-            label3.Visible = true;
-                     
+            try
+            {
+                pictureBox2.Image = AdjustGamma(pictureBox1.Image, hScrollBar1.Value);
+                hScrollBar1.Visible = true;
+                label3.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Сначала необходимо загрузить изображение!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //checkBox1.Checked = false;
+            }
         }
         public Bitmap AdjustGamma(Image image, float gamma)
         {
@@ -100,6 +106,7 @@ namespace WindowsFormsApp1
                 try
                 {
                     pictureBox1.Image = new Bitmap(ofd.FileName);
+                    pictureBox2.Image = pictureBox1.Image;
                 }
                 catch
                 {
@@ -115,10 +122,35 @@ namespace WindowsFormsApp1
 
         private void гистограммаЯркостиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (Form3 f3 = new Form3(this.pictureBox1.Image))
+            using (Form3 f3 = new Form3(this.pictureBox2.Image))
             {
                 f3.ShowDialog(this);
             }
+        }
+
+        private void сохранитьФайлКакToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (pictureBox2.Created)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.DefaultExt = "*.bmp";
+                sfd.Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG;*.JPEG) |*.BMP;*.JPG;*.GIF;*.PNG;*.JPEG |All files (*.*) |*.*";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    string path = sfd.FileName;
+                    pictureBox2.Image.Save(sfd.FileName, System.Drawing.Imaging.ImageFormat.Bmp);
+                }
+                MessageBox.Show("Файл сохранен", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Невозможно сохранить выбранный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

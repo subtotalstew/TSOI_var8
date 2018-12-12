@@ -297,17 +297,17 @@
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="сохранитьФайлКакToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="сохранитьФайлКакToolStripMenuItem.Text" xml:space="preserve">
-    <value>Сохранить файл как...</value>
-  </data>
   <data name="открытьФайлToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
   </data>
   <data name="открытьФайлToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть файл...</value>
+  </data>
+  <data name="сохранитьФайлКакToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 22</value>
+  </data>
+  <data name="сохранитьФайлКакToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить файл как...</value>
   </data>
   <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
@@ -320,6 +320,12 @@
   </data>
   <data name="файлToolStripMenuItem.Text" xml:space="preserve">
     <value>Файл</value>
+  </data>
+  <data name="дополнительныеФункцииToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 20</value>
+  </data>
+  <data name="дополнительныеФункцииToolStripMenuItem.Text" xml:space="preserve">
+    <value>Дополнительные функции</value>
   </data>
   <data name="гистограммаЯркостиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
@@ -338,12 +344,6 @@
   </data>
   <data name="координатнаяСеткаToolStripMenuItem.Text" xml:space="preserve">
     <value>Координатная сетка</value>
-  </data>
-  <data name="дополнительныеФункцииToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
-  </data>
-  <data name="дополнительныеФункцииToolStripMenuItem.Text" xml:space="preserve">
-    <value>Дополнительные функции</value>
   </data>
   <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -378,6 +378,9 @@
   <data name="&gt;&gt;menuStrip2.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>137, 16</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -446,6 +449,12 @@
   </data>
   <data name="&gt;&gt;оПрограммеToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

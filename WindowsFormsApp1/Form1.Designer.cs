@@ -46,6 +46,7 @@
             this.координатнаяСеткаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip2.SuspendLayout();
@@ -97,8 +98,8 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сохранитьФайлКакToolStripMenuItem,
             this.открытьФайлToolStripMenuItem,
+            this.сохранитьФайлКакToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             resources.ApplyResources(this.файлToolStripMenuItem, "файлToolStripMenuItem");
@@ -107,6 +108,7 @@
             // 
             this.сохранитьФайлКакToolStripMenuItem.Name = "сохранитьФайлКакToolStripMenuItem";
             resources.ApplyResources(this.сохранитьФайлКакToolStripMenuItem, "сохранитьФайлКакToolStripMenuItem");
+            this.сохранитьФайлКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьФайлКакToolStripMenuItem_Click);
             // 
             // открытьФайлToolStripMenuItem
             // 
@@ -118,6 +120,7 @@
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             resources.ApplyResources(this.выходToolStripMenuItem, "выходToolStripMenuItem");
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // дополнительныеФункцииToolStripMenuItem
             // 
@@ -202,6 +205,7 @@
         private System.Windows.Forms.ToolStripMenuItem координатнаяСеткаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

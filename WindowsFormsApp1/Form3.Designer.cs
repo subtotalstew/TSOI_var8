@@ -51,9 +51,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 13);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Оригинальное изображение";
+            this.label1.Text = "Изображение";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
